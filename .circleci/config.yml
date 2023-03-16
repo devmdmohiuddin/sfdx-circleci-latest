@@ -34,7 +34,7 @@ jobs:
             echo 'make hub key'
             #- mkdir keys
             #- echo $HUB_SERVER_KEY_HEX | xxd -r -ps >> keys/hub.key
-            openssl enc -nosalt -aes-256-cbc -d -in server.key.enc -out assets/server.key -base64 -K 6683FE9B10C823B25F580262F808AD261D7206946B3590DADEC11BADF3E33512 -iv 0EE90C88A62C15A10B0A3718560D7FFA
+            openssl enc -nosalt -aes-256-cbc -d -in server.key.enc -out server.key -base64 -K 6683FE9B10C823B25F580262F808AD261D7206946B3590DADEC11BADF3E33512 -iv 0EE90C88A62C15A10B0A3718560D7FFA
             #- openssl rsa -in keys/hub.key -check -noout
           ### Uncomment the following if performing deployments
           #- echo 'make deploy key'
